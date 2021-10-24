@@ -28,7 +28,7 @@ if %opcao% GEQ 6 goto opcao6
 
 :opcao1
 cls
-rd /S /Q c:\Users\victo\AppData\Local\Temp
+rd /S /Q %userprofile%\AppData\Local\Temp
 rd /S /Q c:\$Recycle.bin
 echo =================================
 echo *	   Lixeira Esvaziada          *
