@@ -2,15 +2,15 @@
 cls
 :menu
 cls
-color 80
+color 02
 
+echo Ola %username% voce executou isso no %computername%
 date /t
-
-echo Computador: %computername%		Usuario: %username%
-
+echo _	
+echo _
 echo		MENU TAREFAS
 echo =================================
-echo *  1. Esvaziar a Lixeira         *
+echo *  1. Limpa Cache                *
 echo *  2. Fazer Backup               *
 echo *  3. Escanear Disco Local       *
 echo *  4. Painel de Controle         *
@@ -28,13 +28,12 @@ if %opcao% GEQ 6 goto opcao6
 
 :opcao1
 cls
-rd /S /Q %userprofile%\AppData\Local\Temp
+rd /S /Q c:\Users\victo\AppData\Local\Temp
 rd /S /Q c:\$Recycle.bin
 echo =================================
-echo *	   Lixeira Esvaziada          *
+echo *	      Cache Limpo            *
 echo =================================
-pause
-goto menu
+exit
 
 :opcao3
 cls
